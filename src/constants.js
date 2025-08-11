@@ -225,7 +225,7 @@ export const experiences = [
       image: expensetracker,
       tags: ["React JS", "Node JS", "MongoDB", "TailwindCSS", "Express JS",'JWT'],
       github: "https://github.com/sumitdiwaka/Expense-Tracker",
-      webapp: "",
+      webapp: "https://expense-tracker-1-yqg5.onrender.com",
     },
     {
       id: 3,
@@ -241,36 +241,36 @@ export const experiences = [
         "LLaMA",
         "AI",],
       github: "https://github.com/sumit-kumar-2104/IEEE_Document_Formatter",
-      webapp: "",
+      webapp: "https://ieee-document-formatter-2.onrender.com",
     },
     {
       id: 4,
       title: "GIF Search",
       description:
-        "A productivity-boosting Chrome extension designed to help users manage and remember their daily tasks. Built using JavaScript, it offers a simple interface with reminders and task notifications to keep users on track.",
+        "Built an interactive web application that lets users search and browse GIFs instantly by keywords (e.g., “laugh,” “sad”). Integrated Giphy API to fetch real-time results and provided one-click copyable links for easy sharing and embedding. Designed with a clean, responsive interface for a smooth user experience.",
       image: gif,
       tags: ["JavaScript",  "HTML", "CSS"],
       github: "https://github.com/sumitdiwaka/Gif-Search",
-      webapp: "",
+      webapp: "https://gifssearc.netlify.app/",
     },
     {
       id: 5,
       title: "Memory Game",
       description:
-        "The official website for Webverse Digital, a creative digital marketing agency. Built using HTML, CSS, and JavaScript, it features visually appealing animations and a clean design to showcase the agency's services.",
+        "Developed an interactive memory matching game using HTML, CSS, and JavaScript. Features real-time move and timer tracking, randomized card placement, and a clean, responsive UI. Designed for engaging gameplay that challenges memory skills while offering a smooth user experience.",
       image: memory,
       tags: ["HTML", "CSS", "JavaScript", ],
       github: "https://github.com/sumitdiwaka/Memory-Game",
-      webapp: "",
+      webapp: "https://memorygamefi.netlify.app/",
     },
     {
       id: 6,
       title: "Landing Page",
       description:
-        "An ed-tech platform where users can access tech and coding-related blogs, notes, interview questions, e-books, and premium content with payment integration. Built with full-stack technologies for a seamless learning experience.",
+        "Created an eye-catching landing page using HTML and CSS, enhanced with smooth animations and transitions for a modern, engaging look. Focused on delivering a visually appealing layout with attractive design elements..",
       image: animations,
       tags: ["HTML", "CSS"],
       github: "https://github.com/sumitdiwaka/Data-Time-Analytics.-",
-      webapp: "",
+      webapp: "https://timedata.netlify.app/",
     },
     ];
