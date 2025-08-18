@@ -225,7 +225,7 @@ export const experiences = [
       image: expensetracker,
       tags: ["React JS", "Node JS", "MongoDB", "TailwindCSS", "Express JS",'JWT'],
       github: "https://github.com/sumitdiwaka/Expense-Tracker",
-      webapp: "https://expense-tracker-1-yqg5.onrender.com",
+      webapp: "https://expense-tracker-zz6y-jmi3fz1ua.vercel.app",
     },
     {
       id: 3,
