@@ -1,7 +1,6 @@
 // Skills Section Logo's
 import htmlLogo from './assets/tech_logo/html.png';
 import cssLogo from './assets/tech_logo/css.png';
-import sassLogo from './assets/tech_logo/sass.png';
 import javascriptLogo from './assets/tech_logo/javascript.png';
 import reactjsLogo from './assets/tech_logo/reactjs.png';
 import angularLogo from './assets/tech_logo/angular.png';
@@ -9,14 +8,12 @@ import reduxLogo from './assets/tech_logo/redux.png';
 import nextjsLogo from './assets/tech_logo/nextjs.png';
 import tailwindcssLogo from './assets/tech_logo/tailwindcss.png';
 import gsapLogo from './assets/tech_logo/gsap.png';
-import materialuiLogo from './assets/tech_logo/materialui.png';
 import bootstrapLogo from './assets/tech_logo/bootstrap.png';
 import springbootLogo from './assets/tech_logo/springboot.png';
 import nodejsLogo from './assets/tech_logo/nodejs.png';
 import expressjsLogo from './assets/tech_logo/express.png';
 import mysqlLogo from './assets/tech_logo/mysql.png';
 import mongodbLogo from './assets/tech_logo/mongodb.png';
-import firebaseLogo from './assets/tech_logo/firebase.png';
 import cLogo from './assets/tech_logo/c.png';
 import cppLogo from './assets/tech_logo/cpp.png';
 import javaLogo from './assets/tech_logo/java.png';
@@ -30,7 +27,6 @@ import mcLogo from './assets/tech_logo/mc.png';
 import figmaLogo from './assets/tech_logo/figma.png';
 import netlifyLogo from './assets/tech_logo/netlify.png';
 import vercelLogo from './assets/tech_logo/vercel.png';
-import postgreLogo from './assets/tech_logo/postgre.png';
 import csharpLogo from './assets/tech_logo/csharp.png';
 import sqliteLogo from './assets/tech_logo/sqlite.jpg';
 // Experience & learning Section Logo's
@@ -43,11 +39,11 @@ import kvlogo from './assets/education_logo/kvlogo.jpg';
 
 //projects Section Logo's
 import aimusic from './assets/project_logo/aimusic.png';
-import animations from './assets/project_logo/animations.png';
 import expensetracker from './assets/project_logo/expensetracker.png';
-import gif from './assets/project_logo/gif.png';
 import ieee from './assets/project_logo/ieee.png';
-import memory from './assets/project_logo/memory.png';
+import Videochat from './assets/project_logo/Videochat.png';
+import Memorymeld from './assets/project_logo/Memory-meld.png';
+import noteMaking from './assets/project_logo/noteMaking.png';
 
 
 export const SkillsInfo = [
@@ -159,12 +155,10 @@ export const experiences = [
     "Competitive Programming",
   ],
 }
+];
 
-  ];
-
-   export const education = [
-
-       {
+export const education = [
+{
       id: 0,
       img: kvlogo,
       school: "Kendriya Vidyalaya Gole Market, New Delhi",
@@ -197,16 +191,6 @@ export const experiences = [
 
 
    export const projects = [
-    // {
-    //   id: 0,
-    //   title: "GitHub Profile Detective",
-    //   description:
-    //     "A powerful and user-friendly React.js application designed to uncover and showcase detailed GitHub profile information. Simply enter a GitHub username, and the app fetches comprehensive data, including profile stats, repositories, followers, and contributions. The intuitive interface ensures a seamless experience, making it a must-visit tool for developers and recruiters.",
-    //   image: githubdetLogo,
-    //   tags: ["HTML", "CSS", "JavaScript", "React JS", "API"],
-    //   github: "https://github.com/codingmastr/GitHub-Profile-Search-App-Using-React-JS",
-    //   webapp: "https://githubprofiledetective.netlify.app/",
-    // },
     {
       id: 0,
       title: "AI Music Generator",
@@ -216,6 +200,16 @@ export const experiences = [
       tags: ["python",'Flask framework', 'SQLite',"HTML", "TailwindCSS", "JavaScript"],
       github: "https://github.com/sumitdiwaka/Music-Generation-Using-LSTM",
       webapp: "",
+    },
+        {
+      id: 1,
+      title: "Video-Chat-App",
+      description:
+        "A Full-Stack Slack Clone This is a feature-rich, full-stack video chat application that mimics the core functionalities of Slack. It includes real-time messaging, video and audio calls, file sharing, and much more. This project is built with the MERN stack (MongoDB, Express.js, React.js, Node.js) and integrates several modern technologies to provide a seamless user experience..",
+      image: Videochat,
+      tags: ["React",'Node js', 'Express js',"MongoDB", "TailwindCSS", "clerk",],
+      github: "https://github.com/sumitdiwaka/video-chat-app",
+      webapp: "http://video-chat-app-frontend-alpha.vercel.app",
     },
     {
       id: 2,
@@ -245,32 +239,22 @@ export const experiences = [
     },
     {
       id: 4,
-      title: "GIF Search",
+      title: "MindScribe",
       description:
-        "Built an interactive web application that lets users search and browse GIFs instantly by keywords (e.g., “laugh,” “sad”). Integrated Giphy API to fetch real-time results and provided one-click copyable links for easy sharing and embedding. Designed with a clean, responsive interface for a smooth user experience.",
-      image: gif,
-      tags: ["JavaScript",  "HTML", "CSS"],
-      github: "https://github.com/sumitdiwaka/Gif-Search",
-      webapp: "https://gifssearc.netlify.app/",
+        "A Modern Full-Stack Note-Taking Application MindScribe is a sleek, secure, and modern full-stack note-taking application designed to provide a seamless and visually appealing user experience. It features a secure authentication system with both passwordless OTP and Google OAuth, allowing users to quickly sign up and manage their notes. The application boasts a stunning dark mode UI with glassmorphism effects and subtle animations.",
+      image: noteMaking,
+      tags: ["React",  "Node js", "Express js",'MongoDB','TailwindCSS','Passport js'],
+      github: "https://github.com/sumitdiwaka/Highway-Delite-Ass",
+      webapp: "https://highway-delite-ass.vercel.app",
     },
     {
       id: 5,
       title: "Memory Game",
       description:
-        "Developed an interactive memory matching game using HTML, CSS, and JavaScript. Features real-time move and timer tracking, randomized card placement, and a clean, responsive UI. Designed for engaging gameplay that challenges memory skills while offering a smooth user experience.",
-      image: memory,
-      tags: ["HTML", "CSS", "JavaScript", ],
-      github: "https://github.com/sumitdiwaka/Memory-Game",
-      webapp: "https://memorygamefi.netlify.app/",
-    },
-    {
-      id: 6,
-      title: "Landing Page",
-      description:
-        "Created an eye-catching landing page using HTML and CSS, enhanced with smooth animations and transitions for a modern, engaging look. Focused on delivering a visually appealing layout with attractive design elements..",
-      image: animations,
-      tags: ["HTML", "CSS"],
-      github: "https://github.com/sumitdiwaka/Data-Time-Analytics.-",
-      webapp: "https://timedata.netlify.app/",
-    },
+        "A Memory Match Game Mind Meld is a sleek, modern, and responsive card-matching memory game built as a frontend development assignment. The game challenges players to find all matching pairs of cards in the shortest amount of time and with the fewest moves. It features a clean user interface, smooth animations, and a persistent leaderboard to encourage replayability.",
+      image: Memorymeld,
+      tags: ["React", "TailwindCSS", "Framer Motion", ],
+      github: "https://github.com/sumitdiwaka/Memory-LSOYS-Games---Apps",
+      webapp: "https://memory-lsoys-games-apps.vercel.app",
+    }, 
     ];
