@@ -229,7 +229,7 @@ export const projects = [
       "A full-stack productivity application built with the MERN stack, featuring secure JWT authentication, real-time CRUD operations, and a dynamic dashboard. It includes advanced filtering, a progress-tracking status bar, and a toggleable Calendar View to manage deadlines effectively.",
     image: task,
     tags: ["JavaScript (ES6+)", "React/Vite", "Node.js", "Express", "MongoDB","JWT", "Bcrypt", "TailwindCSS"],
-    github: "https://github.com/sumitdiwaka/Task-Management-Primetrader",
+    github: "https://github.com/sumitdiwaka/Task-Management-Primetrade",
     webapp: "https://task-management-p-git-a754be-sumitdiwakar476-gmailcoms-projects.vercel.app",
   },
   {
