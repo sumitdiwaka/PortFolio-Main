@@ -172,92 +172,135 @@ const Education = () => {
   return (
     <section
       id="education"
-      className="py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 md:px-8 lg:px-16 xl:px-24 font-sans bg-skills-gradient clip-path-custom-3"
+      className="py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-24 font-sans bg-skills-gradient clip-path-custom-3"
     >
       {/* Section Title */}
-      <div className="text-center mb-10 sm:mb-12 md:mb-16 lg:mb-20">
-        <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold text-white">
+      <div className="text-center mb-10 md:mb-12 lg:mb-16">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white">
           EDUCATION
         </h2>
-        <div className="w-20 sm:w-24 md:w-28 lg:w-32 h-0.5 sm:h-1 bg-purple-500 mx-auto mt-3 sm:mt-4"></div>
-        <p className="text-gray-400 mt-3 sm:mt-4 text-sm xs:text-base sm:text-lg md:text-xl px-2 sm:px-0 max-w-2xl mx-auto">
+        <div className="w-24 sm:w-32 md:w-40 h-1 bg-purple-500 mx-auto mt-3 md:mt-4"></div>
+        <p className="text-gray-300 mt-4 md:mt-6 text-base sm:text-lg md:text-xl max-w-3xl mx-auto px-4">
           My education has been a journey of learning and development. Here are the details of my academic background
         </p>
       </div>
 
-      {/* Education Timeline */}
+      {/* Education Timeline - Mobile First Approach */}
       <div className="relative">
-        {/* Vertical line - Hidden on mobile, shown on medium+ */}
-        <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-0.5 sm:w-1 bg-white/50 h-full"></div>
+        {/* Vertical Timeline Line - Only on Desktop */}
+        <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-0.5 bg-gradient-to-b from-transparent via-purple-500 to-transparent h-full"></div>
 
-        {/* Education Entries */}
         {education.map((edu, index) => (
           <div
             key={edu.id}
-            className={`relative mb-10 sm:mb-12 md:mb-16 lg:mb-20 ${
-              // Mobile: Stacked layout, Desktop: Alternating layout
-              index % 2 === 0 ? "md:flex md:justify-end" : "md:flex md:justify-start"
+            className={`relative mb-12 md:mb-16 lg:mb-20 ${
+              // Mobile: Full width, Desktop: Alternating sides
+              "lg:flex lg:items-center"
+            } ${
+              index % 2 === 0 
+                ? "lg:justify-start lg:pr-[50%]" 
+                : "lg:justify-end lg:pl-[50%]"
             }`}
           >
-            {/* Timeline Circle - Hidden on mobile, shown on medium+ */}
-            <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 bg-gray-800 border-4 border-[#8245ec] w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full justify-center items-center z-10">
+            {/* Timeline Dot - Visible on all screens */}
+            <div className={`
+              absolute left-0 lg:left-1/2 
+              ${index % 2 === 0 ? 'lg:-translate-x-1/2' : 'lg:-translate-x-1/2'}
+              w-6 h-6 md:w-8 md:h-8 rounded-full 
+              bg-gray-900 border-4 border-[#8245ec]
+              -translate-x-1/2 lg:translate-x-0
+              z-10
+              ${index === 0 ? 'top-6' : 'top-8'}
+            `}>
               <img
                 src={edu.img}
                 alt={edu.school}
-                className="w-full h-full object-cover rounded-full p-1"
+                className="w-full h-full object-cover rounded-full p-0.5"
               />
             </div>
 
-            {/* Content Section */}
-            <div
-              className={`w-full ${
-                // Desktop: 45% width for alternating layout
-                index % 2 === 0 ? "md:w-11/12 lg:w-5/12 md:mr-6 lg:mr-12" : "md:w-11/12 lg:w-5/12 md:ml-6 lg:ml-12"
-              } p-4 sm:p-6 md:p-8 rounded-xl md:rounded-2xl shadow-lg md:shadow-2xl border border-white/20 bg-gray-900/90 backdrop-blur-sm md:backdrop-blur-md shadow-purple-900/20 hover:shadow-purple-900/40 transition-all duration-300 hover:scale-[1.02] active:scale-100`}
-            >
-              {/* Header section with image and basic info */}
-              <div className="flex flex-col xs:flex-row items-start xs:items-center gap-4 sm:gap-6 mb-4">
-                {/* School Logo/Image */}
-                <div className="w-16 h-16 xs:w-20 xs:h-20 sm:w-24 sm:h-20 md:w-28 md:h-24 flex-shrink-0 bg-white/10 rounded-lg overflow-hidden border border-white/10">
-                  <img
-                    src={edu.img}
-                    alt={edu.school}
-                    className="w-full h-full object-contain p-1 sm:p-2"
-                  />
+            {/* Mobile Timeline Line */}
+            <div className="absolute left-0 w-0.5 h-full bg-white/20 -z-10 lg:hidden"></div>
+
+            {/* Education Card */}
+            <div className={`
+              ml-8 lg:ml-0
+              w-[calc(100%-2rem)] lg:w-5/12
+              p-5 sm:p-6 md:p-7 lg:p-8
+              rounded-xl lg:rounded-2xl
+              bg-gray-900/80 backdrop-blur-sm
+              border border-white/10
+              shadow-lg shadow-purple-900/20
+              hover:shadow-xl hover:shadow-purple-900/30
+              transition-all duration-300
+              ${index % 2 === 0 ? 'lg:mr-8' : 'lg:ml-8'}
+            `}>
+              {/* Card Content */}
+              <div className="flex flex-col sm:flex-row gap-4 md:gap-6">
+                {/* Institution Logo - Larger on Desktop */}
+                <div className="flex-shrink-0">
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 bg-white/5 rounded-lg overflow-hidden border border-white/10 flex items-center justify-center">
+                    <img
+                      src={edu.img}
+                      alt={edu.school}
+                      className="w-full h-full object-contain p-2"
+                    />
+                  </div>
                 </div>
 
-                {/* Degree, School Name, and Date */}
-                <div className="flex-1 min-w-0">
-                  <h3 className="text-lg xs:text-xl sm:text-2xl md:text-2xl lg:text-3xl font-semibold text-white truncate">
-                    {edu.degree}
-                  </h3>
-                  <h4 className="text-sm xs:text-base sm:text-lg md:text-xl text-gray-300 mt-1 truncate">
-                    {edu.school}
-                  </h4>
-                  <p className="text-xs xs:text-sm sm:text-base text-gray-400 mt-2 font-medium">
-                    {edu.date}
-                  </p>
+                {/* Text Content */}
+                <div className="flex-1">
+                  {/* Degree and School */}
+                  <div className="mb-3 md:mb-4">
+                    <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1">
+                      {edu.degree}
+                    </h3>
+                    <h4 className="text-lg sm:text-xl md:text-2xl text-purple-300 font-semibold">
+                      {edu.school}
+                    </h4>
+                  </div>
+
+                  {/* Date */}
+                  <div className="mb-3 md:mb-4">
+                    <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-200 rounded-full text-sm md:text-base font-medium border border-purple-700/30">
+                      {edu.date}
+                    </span>
+                  </div>
+
+                  {/* Grade */}
+                  <div className="mb-4 md:mb-5">
+                    <p className="text-base md:text-lg text-gray-300">
+                      <span className="font-semibold text-white">Grade: </span>
+                      <span className="text-green-300 font-bold">{edu.grade}</span>
+                    </p>
+                  </div>
+
+                  {/* Description */}
+                  <div className="pt-4 border-t border-white/10">
+                    <p className="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed">
+                      {edu.desc}
+                    </p>
+                  </div>
                 </div>
               </div>
-
-              {/* Grade and Description */}
-              <div className="mt-4 pt-4 border-t border-white/10">
-                <p className="text-sm xs:text-base sm:text-lg text-purple-300 font-semibold mb-3">
-                  Grade: <span className="text-white">{edu.grade}</span>
-                </p>
-                <p className="text-xs xs:text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed">
-                  {edu.desc}
-                </p>
-              </div>
-
-              {/* Mobile-only timeline dot */}
-              <div className="md:hidden absolute -left-3 top-8 w-6 h-6 bg-gray-800 border-2 border-[#8245ec] rounded-full z-10"></div>
             </div>
-
-            {/* Mobile timeline connector line */}
-            <div className="md:hidden absolute left-0 top-0 w-0.5 h-full bg-white/30 -z-10"></div>
           </div>
         ))}
+      </div>
+
+      {/* Responsive Timeline Legend */}
+      <div className="mt-12 md:mt-16 text-center">
+        <div className="inline-flex items-center gap-2 md:gap-4 text-sm md:text-base text-gray-400">
+          <div className="flex items-center gap-2">
+            <div className="w-3 h-3 rounded-full bg-[#8245ec]"></div>
+            <span>Timeline Marker</span>
+          </div>
+          <div className="hidden sm:block">•</div>
+          <div className="flex items-center gap-2">
+            <div className="w-3 h-3 rounded-full bg-purple-500/50"></div>
+            <span>Education Milestone</span>
+          </div>
+        </div>
       </div>
     </section>
   );
