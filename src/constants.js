@@ -9,7 +9,6 @@ import nextjsLogo from './assets/tech_logo/nextjs.png';
 import tailwindcssLogo from './assets/tech_logo/tailwindcss.png';
 import gsapLogo from './assets/tech_logo/gsap.png';
 import bootstrapLogo from './assets/tech_logo/bootstrap.png';
-import springbootLogo from './assets/tech_logo/springboot.png';
 import nodejsLogo from './assets/tech_logo/nodejs.png';
 import expressjsLogo from './assets/tech_logo/express.png';
 import mysqlLogo from './assets/tech_logo/mysql.png';
@@ -40,11 +39,12 @@ import kvlogo from './assets/education_logo/kvlogo.jpg';
 //projects Section Logo's
 import aimusic from './assets/project_logo/aimusic.png';
 import expensetracker from './assets/project_logo/expensetracker.png';
-import ieee from './assets/project_logo/ieee.png';
+import Golfservices from './assets/project_logo/Golfservice.png';
 import task from './assets/project_logo/task.png';
 import Videochat from './assets/project_logo/Videochat.png';
-import Memorymeld from './assets/project_logo/Memory-meld.png';
 import noteMaking from './assets/project_logo/noteMaking.png';
+import Memorymeld from './assets/project_logo/Memory-meld.png';
+
 
 
 export const SkillsInfo = [
@@ -192,18 +192,18 @@ export const education = [
 
 
 export const projects = [
+  // {
+  //   id: 1,
+  //   title: "AI Music Generator",
+  //   description:
+  //     "A full-stack web application that uses an LSTM neural network to generate original musical melodies. The platform features a complete user authentication system, a personal dashboard to save and manage generated songs, and an advanced in-browser player with real-time visualization and playback controls.",
+  //   image: aimusic,
+  //   tags: ["python", 'Flask framework', 'SQLite', "HTML", "TailwindCSS", "JavaScript"],
+  //   github: "https://github.com/sumitdiwaka/Music-Generation-Using-LSTM",
+  //   webapp: "",
+  // },
   {
     id: 0,
-    title: "AI Music Generator",
-    description:
-      "A full-stack web application that uses an LSTM neural network to generate original musical melodies. The platform features a complete user authentication system, a personal dashboard to save and manage generated songs, and an advanced in-browser player with real-time visualization and playback controls.",
-    image: aimusic,
-    tags: ["python", 'Flask framework', 'SQLite', "HTML", "TailwindCSS", "JavaScript"],
-    github: "https://github.com/sumitdiwaka/Music-Generation-Using-LSTM",
-    webapp: "",
-  },
-  {
-    id: 1,
     title: "Video-Chat-App",
     description:
       "A Full-Stack Slack Clone This is a feature-rich, full-stack video chat application that mimics the core functionalities of Slack. It includes real-time messaging, video and audio calls, file sharing, and much more. This project is built with the MERN stack (MongoDB, Express.js, React.js, Node.js) and integrates several modern technologies to provide a seamless user experience..",
@@ -232,8 +232,29 @@ export const projects = [
     github: "https://github.com/sumitdiwaka/Task-Management-Primetrade",
     webapp: "https://task-management-p-git-a754be-sumitdiwakar476-gmailcoms-projects.vercel.app",
   },
-  {
+   {
     id: 4,
+    title: "AI Music Generator",
+    description:
+      "A full-stack web application that uses an LSTM neural network to generate original musical melodies. The platform features a complete user authentication system, a personal dashboard to save and manage generated songs, and an advanced in-browser player with real-time visualization and playback controls.",
+    image: aimusic,
+    tags: ["python", 'Flask framework', 'SQLite', "HTML", "TailwindCSS", "JavaScript"],
+    github: "https://github.com/sumitdiwaka/Music-Generation-Using-LSTM",
+    webapp: "",
+  },
+
+   {
+    id: 5,
+    title: "GolfGives",
+    description:
+      "A full-stack web application that combines golf performance tracking with a subscription-based prize draw and charitable giving. Users can enter their latest golf scores to participate in monthly draws, win rewards based on score matches, and contribute a portion of their subscription to selected charities. Built using React, Node.js, Express, MongoDB, and Stripe for secure payments, with an admin panel for managing users, draws, and payouts",
+    image: Golfservices,
+    tags: ["React","Node js","Express js","MongoDB", "TailwindCSS", "Stripe"],
+    github: "https://github.com/sumitdiwaka/Digital-Heroes-Golf",
+    webapp: "https://digital-heroes-golf.vercel.app",
+  },
+    {
+    id: 6,
     title: "MindScribe",
     description:
       "A Modern Full-Stack Note-Taking Application MindScribe is a sleek, secure, and modern full-stack note-taking application designed to provide a seamless and visually appealing user experience. It features a secure authentication system with both passwordless OTP and Google OAuth, allowing users to quickly sign up and manage their notes. The application boasts a stunning dark mode UI with glassmorphism effects and subtle animations.",
@@ -241,15 +262,5 @@ export const projects = [
     tags: ["React", "Node js", "Express js", 'MongoDB', 'TailwindCSS', 'Passport js'],
     github: "https://github.com/sumitdiwaka/Highway-Delite-Ass",
     webapp: "https://highway-delite-ass.vercel.app",
-  },
-  {
-    id: 5,
-    title: "Memory Game",
-    description:
-      "A Memory Match Game Mind Meld is a sleek, modern, and responsive card-matching memory game built as a frontend development assignment. The game challenges players to find all matching pairs of cards in the shortest amount of time and with the fewest moves. It features a clean user interface, smooth animations, and a persistent leaderboard to encourage replayability.",
-    image: Memorymeld,
-    tags: ["React", "TailwindCSS", "Framer Motion",],
-    github: "https://github.com/sumitdiwaka/Memory-LSOYS-Games---Apps",
-    webapp: "https://memory-lsoys-games-apps.vercel.app",
   },
 ];
