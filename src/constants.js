@@ -39,7 +39,7 @@ import kvlogo from './assets/education_logo/kvlogo.jpg';
 //projects Section Logo's
 import aimusic from './assets/project_logo/aimusic.png';
 import expensetracker from './assets/project_logo/expensetracker.png';
-import Golfservices from './assets/project_logo/Golfservice.png';
+import Golfservices from './assets/project_logo/GolfService.png';
 import task from './assets/project_logo/task.png';
 import Videochat from './assets/project_logo/Videochat.png';
 import noteMaking from './assets/project_logo/noteMaking.png';
