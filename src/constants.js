@@ -40,6 +40,7 @@ import kvlogo from './assets/education_logo/kvlogo.jpg';
 import aimusic from './assets/project_logo/aimusic.png';
 import expensetracker from './assets/project_logo/expensetracker.png';
 import Golfservices from './assets/project_logo/GolfService.png';
+import vendor from './assets/project_logo/vendor.png';
 import task from './assets/project_logo/task.png';
 import Videochat from './assets/project_logo/Videochat.png';
 import noteMaking from './assets/project_logo/noteMaking.png';
@@ -232,19 +233,8 @@ export const projects = [
     github: "https://github.com/sumitdiwaka/Task-Management-Primetrade",
     webapp: "https://task-management-p-git-a754be-sumitdiwakar476-gmailcoms-projects.vercel.app",
   },
-   {
+     {
     id: 4,
-    title: "AI Music Generator",
-    description:
-      "A full-stack web application that uses an LSTM neural network to generate original musical melodies. The platform features a complete user authentication system, a personal dashboard to save and manage generated songs, and an advanced in-browser player with real-time visualization and playback controls.",
-    image: aimusic,
-    tags: ["python", 'Flask framework', 'SQLite', "HTML", "TailwindCSS", "JavaScript"],
-    github: "https://github.com/sumitdiwaka/Music-Generation-Using-LSTM",
-    webapp: "",
-  },
-
-   {
-    id: 5,
     title: "GolfGives",
     description:
       "A full-stack web application that combines golf performance tracking with a subscription-based prize draw and charitable giving. Users can enter their latest golf scores to participate in monthly draws, win rewards based on score matches, and contribute a portion of their subscription to selected charities. Built using React, Node.js, Express, MongoDB, and Stripe for secure payments, with an admin panel for managing users, draws, and payouts",
@@ -253,14 +243,25 @@ export const projects = [
     github: "https://github.com/sumitdiwaka/Digital-Heroes-Golf",
     webapp: "https://digital-heroes-golf.vercel.app",
   },
-    {
-    id: 6,
-    title: "MindScribe",
+     {
+    id: 5,
+    title: "SHOPWAVE",
     description:
-      "A Modern Full-Stack Note-Taking Application MindScribe is a sleek, secure, and modern full-stack note-taking application designed to provide a seamless and visually appealing user experience. It features a secure authentication system with both passwordless OTP and Google OAuth, allowing users to quickly sign up and manage their notes. The application boasts a stunning dark mode UI with glassmorphism effects and subtle animations.",
-    image: noteMaking,
-    tags: ["React", "Node js", "Express js", 'MongoDB', 'TailwindCSS', 'Passport js'],
-    github: "https://github.com/sumitdiwaka/Highway-Delite-Ass",
-    webapp: "https://highway-delite-ass.vercel.app",
+      "ShopWave is a comprehensive, full-stack multi-vendor e-commerce platform developed using the MERN stack ,The platform is designed to serve as India's multi-vendor marketplace, enabling entrepreneurs and small-to-medium businesses to set up online shops and reach millions of customers across the country. The application supports three distinct user roles - Customer, Vendor, and Administrator - each with dedicated dashboards, workflows, and permissions tailored to their respective responsibilities.",
+    image: vendor,
+    tags: ["React", "Node js", "Express js", 'MongoDB', 'TailwindCSS', 'Razorpay','Cloudinary', 'Nodemailer'],
+    github: "https://github.com/sumitdiwaka/SHOPWAVE",
+    webapp: "https://shopwave-chi.vercel.app",
   },
+  {
+    id: 6,
+    title: "AI Music Generator",
+    description:
+      "A full-stack web application that uses an LSTM neural network to generate original musical melodies. The platform features a complete user authentication system, a personal dashboard to save and manage generated songs, and an advanced in-browser player with real-time visualization and playback controls.",
+    image: aimusic,
+    tags: ["python", 'Flask framework', 'SQLite', "HTML", "TailwindCSS", "JavaScript"],
+    github: "https://github.com/sumitdiwaka/Music-Generation-Using-LSTM",
+    webapp: "",
+  },
+  
 ];
