@@ -193,16 +193,7 @@ export const education = [
 
 
 export const projects = [
-  // {
-  //   id: 1,
-  //   title: "AI Music Generator",
-  //   description:
-  //     "A full-stack web application that uses an LSTM neural network to generate original musical melodies. The platform features a complete user authentication system, a personal dashboard to save and manage generated songs, and an advanced in-browser player with real-time visualization and playback controls.",
-  //   image: aimusic,
-  //   tags: ["python", 'Flask framework', 'SQLite', "HTML", "TailwindCSS", "JavaScript"],
-  //   github: "https://github.com/sumitdiwaka/Music-Generation-Using-LSTM",
-  //   webapp: "",
-  // },
+
   {
     id: 0,
     title: "Video-Chat-App",
@@ -213,8 +204,31 @@ export const projects = [
     github: "https://github.com/sumitdiwaka/video-chat-app",
     webapp: "http://video-chat-app-frontend-alpha.vercel.app",
   },
-  {
+
+       {
+    id: 1,
+    title: "GolfGives",
+    description:
+      "A full-stack web application that combines golf performance tracking with a subscription-based prize draw and charitable giving. Users can enter their latest golf scores to participate in monthly draws, win rewards based on score matches, and contribute a portion of their subscription to selected charities. Built using React, Node.js, Express, MongoDB, and Stripe for secure payments, with an admin panel for managing users, draws, and payouts",
+    image: Golfservices,
+    tags: ["React","Node js","Express js","MongoDB", "TailwindCSS", "Stripe"],
+    github: "https://github.com/sumitdiwaka/Digital-Heroes-Golf",
+    webapp: "https://digital-heroes-golf.vercel.app",
+  },
+
+      {
     id: 2,
+    title: "SHOPWAVE",
+    description:
+      "ShopWave is a comprehensive, full-stack multi-vendor e-commerce platform developed using the MERN stack ,The platform is designed to serve as India's multi-vendor marketplace, enabling entrepreneurs and small-to-medium businesses to set up online shops and reach millions of customers across the country. The application supports three distinct user roles - Customer, Vendor, and Administrator - each with dedicated dashboards, workflows, and permissions tailored to their respective responsibilities.",
+    image: vendor,
+    tags: ["React", "Node js", "Express js", 'MongoDB', 'TailwindCSS', 'Razorpay','Cloudinary', 'Nodemailer'],
+    github: "https://github.com/sumitdiwaka/SHOPWAVE",
+    webapp: "https://shopwave-chi.vercel.app",
+  },
+
+  {
+    id: 3,
     title: "Expense Tracker",
     description:
       "A full-stack financial tracker that helps users monitor income and expenses with real-time analytics. The application includes secure user authentication, a responsive dashboard with interactive visualizations (charts and graphs), and time-based filters to analyze financial trends efficiently.",
@@ -224,7 +238,7 @@ export const projects = [
     webapp: "https://expense-tracker-bzq1.vercel.app",
   },
   {
-    id: 3,
+    id: 4,
     title: "Task Management System",
     description:
       "A full-stack productivity application built with the MERN stack, featuring secure JWT authentication, real-time CRUD operations, and a dynamic dashboard. It includes advanced filtering, a progress-tracking status bar, and a toggleable Calendar View to manage deadlines effectively.",
@@ -233,28 +247,9 @@ export const projects = [
     github: "https://github.com/sumitdiwaka/Task-Management-Primetrade",
     webapp: "https://task-management-p-git-a754be-sumitdiwakar476-gmailcoms-projects.vercel.app",
   },
-     {
-    id: 4,
-    title: "GolfGives",
-    description:
-      "A full-stack web application that combines golf performance tracking with a subscription-based prize draw and charitable giving. Users can enter their latest golf scores to participate in monthly draws, win rewards based on score matches, and contribute a portion of their subscription to selected charities. Built using React, Node.js, Express, MongoDB, and Stripe for secure payments, with an admin panel for managing users, draws, and payouts",
-    image: Golfservices,
-    tags: ["React","Node js","Express js","MongoDB", "TailwindCSS", "Stripe"],
-    github: "https://github.com/sumitdiwaka/Digital-Heroes-Golf",
-    webapp: "https://digital-heroes-golf.vercel.app",
-  },
-     {
-    id: 5,
-    title: "SHOPWAVE",
-    description:
-      "ShopWave is a comprehensive, full-stack multi-vendor e-commerce platform developed using the MERN stack ,The platform is designed to serve as India's multi-vendor marketplace, enabling entrepreneurs and small-to-medium businesses to set up online shops and reach millions of customers across the country. The application supports three distinct user roles - Customer, Vendor, and Administrator - each with dedicated dashboards, workflows, and permissions tailored to their respective responsibilities.",
-    image: vendor,
-    tags: ["React", "Node js", "Express js", 'MongoDB', 'TailwindCSS', 'Razorpay','Cloudinary', 'Nodemailer'],
-    github: "https://github.com/sumitdiwaka/SHOPWAVE",
-    webapp: "https://shopwave-chi.vercel.app",
-  },
+
   {
-    id: 6,
+    id: 5,
     title: "AI Music Generator",
     description:
       "A full-stack web application that uses an LSTM neural network to generate original musical melodies. The platform features a complete user authentication system, a personal dashboard to save and manage generated songs, and an advanced in-browser player with real-time visualization and playback controls.",
