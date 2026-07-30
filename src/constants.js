@@ -45,6 +45,7 @@ import task from './assets/project_logo/task.png';
 import Videochat from './assets/project_logo/Videochat.png';
 import noteMaking from './assets/project_logo/noteMaking.png';
 import Memorymeld from './assets/project_logo/Memory-meld.png';
+import VoiceAgent from './assets/project_logo/VoiceAgent.png';
 
 
 
@@ -205,16 +206,28 @@ export const projects = [
     webapp: "http://video-chat-app-frontend-alpha.vercel.app",
   },
 
-       {
+  {
     id: 1,
-    title: "GolfGives",
+    title: "AI-Medical Voice Agent",
     description:
-      "A full-stack web application that combines golf performance tracking with a subscription-based prize draw and charitable giving. Users can enter their latest golf scores to participate in monthly draws, win rewards based on score matches, and contribute a portion of their subscription to selected charities. Built using React, Node.js, Express, MongoDB, and Stripe for secure payments, with an admin panel for managing users, draws, and payouts",
-    image: Golfservices,
-    tags: ["React","Node js","Express js","MongoDB", "TailwindCSS", "Stripe"],
-    github: "https://github.com/sumitdiwaka/Digital-Heroes-Golf",
-    webapp: "https://digital-heroes-golf.vercel.app",
+      "Built a full-stack AI medical consultation platform with 10 specialized voice agents (Cardiologist, Dermatologist, etcc using Vapi AI and ElevenLabs, enabling real-time patient-doctor voice conversations,ntegrated Google Gemini via OpenRouter for symptom-based doctor matching and auto-generation of structured medical reports covering diagnosis, medications, and recommendations",
+    image: VoiceAgent,
+    tags: ["Next.js", "TypeScript", "Vapi AI", "Gemini", "Clerk", "Neon"],
+    github: "https://github.com/sumitdiwaka/AI-Medical-Voice-Agent",
+    webapp: "https://ai-medical-voice-agent-sable.vercel.app",
+
   },
+
+  //      {
+  //   id: 1,
+  //   title: "GolfGives",
+  //   description:
+  //     "A full-stack web application that combines golf performance tracking with a subscription-based prize draw and charitable giving. Users can enter their latest golf scores to participate in monthly draws, win rewards based on score matches, and contribute a portion of their subscription to selected charities. Built using React, Node.js, Express, MongoDB, and Stripe for secure payments, with an admin panel for managing users, draws, and payouts",
+  //   image: Golfservices,
+  //   tags: ["React","Node js","Express js","MongoDB", "TailwindCSS", "Stripe"],
+  //   github: "https://github.com/sumitdiwaka/Digital-Heroes-Golf",
+  //   webapp: "https://digital-heroes-golf.vercel.app",
+  // },
 
       {
     id: 2,
@@ -222,7 +235,7 @@ export const projects = [
     description:
       "ShopWave is a comprehensive, full-stack multi-vendor e-commerce platform developed using the MERN stack ,The platform is designed to serve as India's multi-vendor marketplace, enabling entrepreneurs and small-to-medium businesses to set up online shops and reach millions of customers across the country. The application supports three distinct user roles - Customer, Vendor, and Administrator - each with dedicated dashboards, workflows, and permissions tailored to their respective responsibilities.",
     image: vendor,
-    tags: ["React", "Node js", "Express js", 'MongoDB', 'TailwindCSS', 'Razorpay','Cloudinary', 'Nodemailer'],
+    tags: ["React", "Node js", "Express js", 'MongoDB', 'TailwindCSS', 'Razorpay', 'Cloudinary', 'Nodemailer'],
     github: "https://github.com/sumitdiwaka/SHOPWAVE",
     webapp: "https://shopwave-chi.vercel.app",
   },
@@ -243,7 +256,7 @@ export const projects = [
     description:
       "A full-stack productivity application built with the MERN stack, featuring secure JWT authentication, real-time CRUD operations, and a dynamic dashboard. It includes advanced filtering, a progress-tracking status bar, and a toggleable Calendar View to manage deadlines effectively.",
     image: task,
-    tags: ["JavaScript (ES6+)", "React/Vite", "Node.js", "Express", "MongoDB","JWT", "Bcrypt", "TailwindCSS"],
+    tags: ["JavaScript (ES6+)", "React/Vite", "Node.js", "Express", "MongoDB", "JWT", "Bcrypt", "TailwindCSS"],
     github: "https://github.com/sumitdiwaka/Task-Management-Primetrade",
     webapp: "https://task-management-p-git-a754be-sumitdiwakar476-gmailcoms-projects.vercel.app",
   },
@@ -258,5 +271,5 @@ export const projects = [
     github: "https://github.com/sumitdiwaka/Music-Generation-Using-LSTM",
     webapp: "",
   },
-  
+
 ];
