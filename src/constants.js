@@ -218,18 +218,8 @@ export const projects = [
 
   },
 
-  //      {
-  //   id: 1,
-  //   title: "GolfGives",
-  //   description:
-  //     "A full-stack web application that combines golf performance tracking with a subscription-based prize draw and charitable giving. Users can enter their latest golf scores to participate in monthly draws, win rewards based on score matches, and contribute a portion of their subscription to selected charities. Built using React, Node.js, Express, MongoDB, and Stripe for secure payments, with an admin panel for managing users, draws, and payouts",
-  //   image: Golfservices,
-  //   tags: ["React","Node js","Express js","MongoDB", "TailwindCSS", "Stripe"],
-  //   github: "https://github.com/sumitdiwaka/Digital-Heroes-Golf",
-  //   webapp: "https://digital-heroes-golf.vercel.app",
-  // },
 
-      {
+  {
     id: 2,
     title: "SHOPWAVE",
     description:
@@ -240,15 +230,25 @@ export const projects = [
     webapp: "https://shopwave-chi.vercel.app",
   },
 
+  // {
+  //   id: 3,
+  //   title: "Expense Tracker",
+  //   description:
+  //     "A full-stack financial tracker that helps users monitor income and expenses with real-time analytics. The application includes secure user authentication, a responsive dashboard with interactive visualizations (charts and graphs), and time-based filters to analyze financial trends efficiently.",
+  //   image: expensetracker,
+  //   tags: ["React JS", "Node JS", "MongoDB", "TailwindCSS", "Express JS", 'JWT'],
+  //   github: "https://github.com/sumitdiwaka/Expense-Tracker",
+  //   webapp: "https://expense-tracker-bzq1.vercel.app",
+  // },
   {
     id: 3,
-    title: "Expense Tracker",
+    title: "GolfGives",
     description:
-      "A full-stack financial tracker that helps users monitor income and expenses with real-time analytics. The application includes secure user authentication, a responsive dashboard with interactive visualizations (charts and graphs), and time-based filters to analyze financial trends efficiently.",
-    image: expensetracker,
-    tags: ["React JS", "Node JS", "MongoDB", "TailwindCSS", "Express JS", 'JWT'],
-    github: "https://github.com/sumitdiwaka/Expense-Tracker",
-    webapp: "https://expense-tracker-bzq1.vercel.app",
+      "A full-stack web application that combines golf performance tracking with a subscription-based prize draw and charitable giving. Users can enter their latest golf scores to participate in monthly draws, win rewards based on score matches, and contribute a portion of their subscription to selected charities. Built using React, Node.js, Express, MongoDB, and Stripe for secure payments, with an admin panel for managing users, draws, and payouts",
+    image: Golfservices,
+    tags: ["React", "Node js", "Express js", "MongoDB", "TailwindCSS", "Stripe"],
+    github: "https://github.com/sumitdiwaka/Digital-Heroes-Golf",
+    webapp: "https://digital-heroes-golf.vercel.app",
   },
   {
     id: 4,
